@@ -3,7 +3,7 @@ let computerScore = 0;
 let humanScore = 0;
 
 // game loop
-while(true) {
+for(let i = 0; i<4; i++) {
     // aditional function
     function formatChoice(str) {
     if (!str || typeof str !== "string") return "";
@@ -36,3 +36,8 @@ while(true) {
     }
 }
 
+if (computerScore > humanScore) {
+    console.log("YOU WIN THE GAME!! CONGRATULATIONS!!")
+}else{
+    console.log("oh... you lose the game...")
+}
